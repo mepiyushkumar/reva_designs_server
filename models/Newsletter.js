@@ -4,8 +4,8 @@ const newsletterSchema = new mongoose.Schema(
   {
     email: {
       type: String,
-      required: true,
       unique: true,
+      sparse: true,
       lowercase: true,
     },
     phone: String,

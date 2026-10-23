@@ -7,6 +7,14 @@ const storeSettingsSchema = new mongoose.Schema(
     email: String,
     whatsapp: String,
     instagram: String,
+    newsletter_email_enabled: {
+      type: Boolean,
+      default: true,
+    },
+    newsletter_phone_enabled: {
+      type: Boolean,
+      default: true,
+    },
     about_home_title: String,
     about_home_subtitle: String,
     about_story_heading: String,
